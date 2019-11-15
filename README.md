@@ -1,5 +1,8 @@
 # Bank Marketing
-Analyzing whether direct marketing campaigns leads to bank term deposit
+
+The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
+
+Analyzing when clients tend to take term deposit.
 
 ## Install
 This project is built using Python and the following Python libraries:
@@ -77,20 +80,42 @@ We will using Random Forest Classifier as a base model and apply GridSearchCV to
 
 ### Visualizations
 
-1. Heatmap
+**1. Heatmap**
 
 ![Heatmap](https://github.com/sriganeshlokesh/bank_marketing/blob/master/img/Heatmap(Bank).png)
 
 From the above Heatmap we can observe that 
-* Day and campaign variables are correlated
+* day and campaign variables are correlated
 * age and balance variables are also correlated
 When compared to other variables in the dataset, these variables are highly correlated.
 
-2. ROC-AUC Curve
+**2. ROC-AUC Curve**
 
 ![roc_auc](https://github.com/sriganeshlokesh/bank_marketing/blob/master/img/ROC%20AUC%20Curve.png)
 
 The Gridsearchcv model is performing pretty well as compared to the basic model. 
+
+**3. Count plot of Marraige, Education and Contact**
+
+![countplot](https://github.com/sriganeshlokesh/bank_marketing/blob/master/img/Countplot%20(Marraige%2C%20Education%2C%20Cellular%20Contact).png)
+
+From the above plot we have three observations:
+* Married couples do not take the term deposit as compared to Single or Divorced couples.
+* Secondary educated clients have high chances of not taking the term deposit.
+* Clients who are contacted through cellular device tend to decline term deposit.
+
+**4. Count plot of Default, Housing and Loan**
+
+![count_plot](https://github.com/sriganeshlokesh/bank_marketing/blob/master/img/Countplot(default%2Chousing%2C%20loan).png)
+
+* Clients who have credit by default tend to decline term deposit.
+* Clients who have housing loan tend to decline term deposit.
+* Clients with a loan decline term deposit.
+
+**5. Pairplot**
+
+![pairplot](https://github.com/sriganeshlokesh/bank_marketing/blob/master/img/Pairplot.png)
+
 
 ### Conclusion
 
