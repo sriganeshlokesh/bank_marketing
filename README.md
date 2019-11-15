@@ -35,7 +35,7 @@ This will open the Jupyter Notebook software and project file in your web browse
 
 ## Data
 
-Dataset used in this project is ![bank-full.csv](https://github.com/sriganeshlokesh/bank_marketing/blob/master/bank-full.csv).
+Dataset used in this project is [bank-full.csv](https://github.com/sriganeshlokesh/bank_marketing/blob/master/bank-full.csv).
 We will using Random Forest Classifier as a base model and apply GridSearchCV to tune the Hyperparameters by consolidating it with pipeling.
 
 #### Features:
@@ -75,5 +75,27 @@ We will using Random Forest Classifier as a base model and apply GridSearchCV to
 ##### Target Variable:
 1. `y` - has the client subscribed a term deposit? (binary: 'yes','no')
 
+### Visualizations
+
+1. Heatmap
+
+![Heatmap](https://github.com/sriganeshlokesh/bank_marketing/blob/master/img/Heatmap(Bank).png)
+
+From the above Heatmap we can observe that 
+* Day and campaign variables are correlated
+* age and balance variables are also correlated
+When compared to other variables in the dataset, these variables are highly correlated.
+
+2. ROC-AUC Curve
+
+![roc_auc](https://github.com/sriganeshlokesh/bank_marketing/blob/master/img/ROC%20AUC%20Curve.png)
+
+The Gridsearchcv model is performing pretty well as compared to the basic model. 
+
+### Conclusion
+
+The Model has an accuracy of 90.78%.
+
+By applying gridsearch cv with more number of parameter values, we can expect the model to perform much better.
 
 
